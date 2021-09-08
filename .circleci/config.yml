@@ -1,6 +1,6 @@
 version: '2.1'
 orbs:
-  fire: njm3754/hello-world-orb-15@dev:3a84b3e
+  fire: njm3754/hello-world-orb-15@alpha:3a84b3e
 workflows:
   use-my-orb:
     jobs:
