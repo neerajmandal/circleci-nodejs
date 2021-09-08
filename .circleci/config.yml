@@ -1,22 +1,7 @@
-version: 2  
+version: '2.1'
 orbs:
-  test: njm3754/hello-world-orb-15@dev:first
-
+  fire: njm3754/hello-world-orb-15@dev:first
 workflows:
-  version: 2
-
-  test:
+  use-my-orb:
     jobs:
-      - build
-
-jobs:
-  build:
-    working_directory: ~/project
-    steps:
-      - checkout
-      - run:
-          #Add command name and bash commands to execute
-          name: Enter command description
-          command: echo "Add command here"
-      - test/greet:
-          to: "hello"
+      - fire/hello
