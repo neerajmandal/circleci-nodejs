@@ -9,7 +9,7 @@ workflows:
   test:
     jobs:
       - build
-      - test/hello
+      - test-1/hello
 jobs:
   build:
     working_directory: ~/project
