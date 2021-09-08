@@ -12,4 +12,3 @@ jobs:
           #Add command name and bash commands to execute
           name: Enter command description
           command: echo "Add command here"
-      - test-orb/greet
