@@ -1,6 +1,6 @@
 version: 2  
 orbs:
-  test: njm3754/hello-world-orb-15@dev:3a84b3e
+  test: njm3754/hello-world-orb-15@dev:first
 jobs:
   build:
     working_directory: ~/project
