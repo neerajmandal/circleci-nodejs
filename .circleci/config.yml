@@ -1,6 +1,6 @@
 version: 2  
 orbs:
-  test-orb: njm3754/hello-world-orb-15@dev:first
+  test: njm3754/hello-world-orb-15@dev:first
 jobs:
   build:
     working_directory: ~/project
@@ -12,4 +12,4 @@ jobs:
           #Add command name and bash commands to execute
           name: Enter command description
           command: echo "Add command here"
-      - test-orb/greet
+      - test/greet
