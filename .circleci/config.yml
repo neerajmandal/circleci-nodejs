@@ -1,6 +1,12 @@
 version: 2  
 orbs:
   test: njm3754/hello-world-orb-15@dev:first
+workflows:
+  version: 2
+
+  test:
+    jobs:
+      - build
 jobs:
   build:
     working_directory: ~/project
