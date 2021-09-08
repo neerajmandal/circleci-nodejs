@@ -1,6 +1,7 @@
 version: 2  
 orbs:
   test: njm3754/hello-world-orb-15@dev:first
+  test-1: njm3754/test-hello-orb@1.1.2 
 workflows:
   version: 2
 
@@ -18,4 +19,4 @@ jobs:
           #Add command name and bash commands to execute
           name: Enter command description
           command: echo "Add command here"
-      - test/greet
+      - test-1/greet
