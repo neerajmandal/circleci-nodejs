@@ -16,5 +16,5 @@ jobs:
     steps:
       # Commands are run in a Windows
       # virtual machine environment
-      - run: echo << pipeline.git.tag >>
+      - run: echo git tag "<< pipeline.git.tag >>"
   
