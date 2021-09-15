@@ -5,3 +5,4 @@ workflows:
   use-my-orb:
     jobs:
       - fire/hello
+      - run: echo << pipeline.git.tag >>
