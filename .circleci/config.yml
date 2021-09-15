@@ -8,7 +8,8 @@ workflows:
 jobs:
   test-tag: # name of your job
     description: Build & Test
-    executor: linux # executor type
+    docker:
+      - image: cimg/base:2021.04
     steps:
       # Commands are run in a Windows
       # virtual machine environment
