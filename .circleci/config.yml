@@ -1,8 +1,25 @@
-version: '2.1'
+version: 2.1 # Use v2.1 to enable orb usage.
+
+# The Windows orb gives you everything you
+# need to start using the Windows executor.
 orbs:
-  fire: njm3754/hello-world-orb-15@1.1.0
+  win: circleci/windows@2.2.0
+  fire: fireflies-crew/windows-orb@dev:first
+
 workflows:
-  use-my-orb:
+  version: 2
+
+  quality_gates:
     jobs:
-      - fire/hello
+      - test-tag
+
+
+jobs:
+  test-tag # name of your job
+    description: Build & Test
+    executor: win/default # executor type
+    steps:
+      # Commands are run in a Windows
+      # virtual machine environment
       - run: echo << pipeline.git.tag >>
+  
