@@ -1,18 +1,11 @@
-version: 2.1 # Use v2.1 to enable orb usage.
-
-# The Windows orb gives you everything you
-# need to start using the Windows executor.
+version: 2.1
 orbs:
   win: circleci/windows@2.2.0
-  fire: fireflies-crew/windows-orb@dev:first
 
 workflows:
-  version: 2
-
   quality_gates:
     jobs:
       - test-tag
-
 
 jobs:
   test-tag # name of your job
