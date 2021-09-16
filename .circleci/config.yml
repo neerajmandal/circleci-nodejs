@@ -7,7 +7,10 @@ orbs:
 workflows:
   quality_gates:
     jobs:
-      - test-tag
+      - test-tag:
+          filters:
+            tags:
+              only: /^v\d+\.\d+\.\d+(-\d+)?/
 
 jobs:
   test-tag: # name of your job
