@@ -2,13 +2,13 @@
 const sum = require('./sum')
 
 describe('sum()', () => {
-  test('Given 1 and 2, should sums 3', () => {
+  test('Given 5 and 2, should sum 7', () => {
     const given = {
-      a: 1,
+      a: 5,
       b: 2
     }
 
-    const expected = 3
+    const expected = 7
 
     const actual = sum(given.a, given.b)
 
